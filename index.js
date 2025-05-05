@@ -120,15 +120,19 @@ async function recursiveDelete(initialUrl, { headers: initialHeaders }) {
 }
 
 recursiveDelete(
-  "https://unicloud-api.dcloud.net.cn/unicloud/api/host/file-list?appid=&provider=alipay&spaceId=env-00jxhg31g17i&end_at=2024-11-30+23:59:59&page=0&pageSize=100&marker=&folder=%2Fmoney%2Fassets",
+  "https://unicloud-api.dcloud.net.cn/unicloud/api/host/file-list?appid=&provider=alipay&spaceId=env-00jxhg31g17i&end_at=2024-11-30+23:59:59&page=0&pageSize=100&marker=&folder=%2Fmoney",
   {
     headers: {
       accept: "application/json, text/plain, */*",
-      "accept-language": "zh-CN,zh;q=0.9",
+      "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
+      "sec-ch-ua":
+        '"Microsoft Edge";v="135", "Not-A.Brand";v="8", "Chromium";v="135"',
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-platform": '"Android"',
       "sec-fetch-dest": "empty",
       "sec-fetch-mode": "cors",
       "sec-fetch-site": "same-site",
-      token: "3b263ad7dbf4c7d6ff31306aa7f271d3",
+      token: "4d7a3dfd7d93b1c2f2941bbf74c68dfa",
     },
     referrer: "https://unicloud.dcloud.net.cn/",
     referrerPolicy: "strict-origin-when-cross-origin",
